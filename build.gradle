@@ -23,25 +23,7 @@ dependencies {
 }
 
 test {
-
-    systemProperty "selenide.fastSetValue","true"
-    systemProperty "selenide.timeout","3500"
-    systemProperty "chromeoptions.args","--disable-notifications"
-    systemProperty "chromeoptions.prefs","intl.accept_languages=es"
     useJUnitPlatform()
-
-    testLogging {
-        // set options for log level LIFECYCLE
-        events "failed",
-                "passed",
-                "skipped",
-                "standard_out",
-                "standard_error"
-        exceptionFormat "full"
-        showExceptions true
-        showCauses true
-        showStackTraces true
-    }
 }
 allure {
     autoconfigure = true

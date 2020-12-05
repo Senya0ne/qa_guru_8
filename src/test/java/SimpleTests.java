@@ -9,6 +9,7 @@ public class SimpleTests {
         assertEquals("Test passed", "Test passed");
     }
 
+    @Test
     void failedTest() {
         assertEquals("Test passed", "Test failed");
 
