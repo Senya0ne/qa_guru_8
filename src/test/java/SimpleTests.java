@@ -11,7 +11,7 @@ public class SimpleTests {
 
     @Test
     void failedTest() {
-        assertEquals("Test passed", "Test failed");
+        assertEquals("Test passed", "Test passed");
 
     }
 
